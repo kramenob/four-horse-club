@@ -1,0 +1,328 @@
+:root {
+	/* Цветовая палитра */
+	--m-one: #FFFFFF;
+	--m-two: #D6D6D6;
+	--m-three: #595653;
+	--m-four: #313131;
+	--m-five: #1F1F1F;
+	--c-one: #E9DED4;
+	--c-two: #FBCE51;
+	--c-three: #F54932;
+	--c-four: #3057A2;
+
+	/* Скорость движения текста бегущей строки */
+	--animation-delay: 30s;
+}
+
+@font-face {
+	font-family: 'Merriweather';
+	src: url('../fonts/merriweather-regular.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Golos';
+	src: url('../fonts/golos.ttf') format('truetype');
+	font-style: normal;
+}
+
+/* Параметры анимации бегущей строки */
+@keyframes ticker {
+	0% {
+	  transform: translateZ(0);
+	}
+	to {
+	  transform: translate3d(-100%, 0, 0);
+	}
+}
+@keyframes main_screen__background__item--layer-7 {
+	0% {
+	  transform: rotate(360deg);
+	}
+	to {
+	  transform: rotate(0deg);
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Golos', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6, p {
+	color: var(--m-four);
+}
+p {
+	font-size: 20px;
+}
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.container {
+    position: relative;
+	z-index: 100;
+
+	max-width: 1222px;
+
+	margin: auto;
+	padding: 0 20px;
+
+}
+
+.main_screen {
+	height: 700px;
+	padding-top: 26px;
+
+	background-color: var(--c-one);
+
+	position: relative;
+}
+.main_screen__logo,
+.main_screen__logo img {
+	height: 36px;
+	width: auto;
+}
+
+.main_screen__content {
+	width: 100%;
+	max-width: 542px;
+
+	height: 100%;
+	max-height: 444px;
+
+	margin-top: 62px;
+}
+.main_screen__content__title {
+	margin-bottom: 24px;
+}
+.main_screen__content__title__row {
+	font-size: 60px;
+	line-height: 110%;
+	text-transform: uppercase;
+}
+.main_screen__content__title__row--first {
+	text-align: left;
+}
+.main_screen__content__title__row--second {
+	text-align: center;
+}
+.main_screen__content__title__row--third {
+	text-align: right;
+}
+
+.main_screen__content__description {
+	margin-bottom: 40px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.main_screen__content__buttons {
+
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+.main_screen__content__button {
+    height: 70px;
+	
+	display: flex;
+	justify-content: center;
+
+	padding: 20px;
+	border-radius: 66px;
+
+	box-sizing: border-box;
+}
+.main_screen__content__button__text {
+	width: 165px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 500;
+}
+.main_screen__content__button--support {
+	background-color: var(--m-five);
+	color: var(--m-one);
+}
+.main_screen__content__button--support:hover {
+	background-color: var(--c-two);
+	color: var(--m-five);
+}
+.main_screen__content__button--details {
+	background-color: unset;
+	color: var(--m-five);
+
+	border: 2px solid black;
+}
+.main_screen__content__button--details:hover {
+	background-color: var(--m-five);
+	color: var(--m-one);
+}
+
+.main_screen__background {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.main_screen__background__item {
+
+	width: 100%;
+    height: 100%;
+	position: absolute;
+}
+
+.main_screen__background__item__img {
+	width: fit-content;
+	height: fit-content;
+
+	user-select: none;
+	-webkit-user-drag: none;
+}
+/* Конь */
+.main_screen__background__item--layer-1 {
+}
+.main_screen__background__item--layer-1 .main_screen__background__item__img {
+	right: 50%;
+    transform: translateX(calc(100% + 154px));
+    position: absolute;
+    bottom: -51px;
+}
+/* Пешка */
+.main_screen__background__item--layer-2 {
+}
+.main_screen__background__item--layer-2 .main_screen__background__item__img {
+	right: 50%;
+	transform: translateX(640px);
+	position: absolute;
+	bottom: 19.5px;
+}
+/* Фильтр */
+.main_screen__background__item--layer-3 {
+	mix-blend-mode: color-burn;
+    display: flex;
+    justify-content: center;
+
+	background-image: url(../img/img-4606c6.png);
+	background-repeat: repeat;
+}
+/* Город */
+.main_screen__background__item--layer-4 {
+	display: flex;
+    justify-content: center;
+    align-items: flex-end;
+	bottom: -22px;
+}
+/* Король */
+.main_screen__background__item--layer-5 {
+}
+.main_screen__background__item--layer-5 .main_screen__background__item__img {
+	left: 50%;
+    top: calc(25px + 270px);
+    transform: translateX(48px);
+    position: absolute;
+}
+/* Королева */
+.main_screen__background__item--layer-6 {
+}
+.main_screen__background__item--layer-6 .main_screen__background__item__img {
+	left: 50%;
+    top: calc(25px + 165px);
+    transform: translateX(calc(-100% + 525px));
+    position: absolute;
+}
+/* Солнце */
+.main_screen__background__item--layer-7 {
+}
+.main_screen__background__item--layer-7 .main_screen__background__item__img {
+	left: 50%;
+    top: -44px;
+    transform: translateX(-8.5px);
+    position: absolute;
+	
+	animation: main_screen__background__item--layer-7 var(--animation-delay) linear infinite;
+}
+
+
+
+
+
+
+
+
+
+.ticker {
+	position: relative;
+	display: flex;
+
+	width: 100%;
+	background-color: var(--c-three);
+}
+.ticker_viewport {
+	max-width: 1920px;
+	overflow: hidden;
+    margin: auto;
+}
+.ticker_content {
+	display: flex;
+	justify-content: space-evenly;
+}
+.ticker_content--one {
+	justify-content: flex-end;
+}
+.ticker_content--two {
+	justify-content: flex-start;
+}
+.ticker_content_runner {
+	backface-visibility: hidden;
+	width: fit-content;
+	display: flex;
+	flex-direction: row;
+
+	padding: 18px 0;
+	
+	white-space: nowrap;
+	flex-shrink: 0;
+	animation: ticker var(--animation-delay) linear infinite;
+}
+
+.ticker__content__phrase {
+	color: var(--c-one);
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 22px;
+	line-height: 110%;
+	display: flex;
+	align-items: center;
+    width: max-content;
+}
+.ticker__content__phrase::after {
+	content: '';
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background-color: var(--c-one);
+	border-radius: 50%;
+
+	margin: 0 12px;
+}
