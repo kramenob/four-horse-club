@@ -1,261 +1,290 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-		<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Превратите уездный город в столицу земного шара</title>
-		<link rel="stylesheet" href="./css/style.css">
+	<title>Клуб четырёх коней</title>
+
+	<!-- meta-теги для поисковых систем -->
+	<meta charset="UTF-8">
+    <meta name="author"      content="Максим Болотин a.k.a. Mark Bone">
+	<meta name="description" content="Превратите уездный город в столицу земного шара.">
+	<meta name="keywords"    content="four-horse-club, клуб четырёх коней">
+	<meta name="viewport"    content="width=device-width, initial-scale=1" />
+	<meta name="robots"      content="index, follow">
+	<!-- meta-теги для социальных сетей -->
+	<meta property="og:title" content="Клуб четырёх коней">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://four-horse-club.netlify.app/">
+	<meta property="og:description" content="Превратите уездный город в столицу земного шара.">
+	<meta property="og:image" content="./img/cover.jpg">
+	<meta property="og:site_name" content="Клуб четырёх коней">
+	<meta property="og:locale" content="ru_RU">
+	<!-- meta-теги для x.com -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Клуб четырёх коней">
+	<meta name="twitter:description" content="Превратите уездный город в столицу земного шара.">
+	<meta name="twitter:image" content="./img/cover.jpg">
+	
+	<meta name="theme-color" content="#E7DBD0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
+	<link rel="icon" href="img/favicon.ico" />
+	<link rel="apple-touch-icon" href="img/favicon.png" />
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="manifest" href="./manifest.json" />
+
+	<script src="./js/ticker.js" defer></script>
+	<script src="./js/carousel.js" defer></script>
 </head>
 <body>
-	<section class="start">
-		<div class="container">
-			<div class="start__logo">
-				<img class="no-touch start__logo__img" src="./img/logo.svg" alt="Клуб четырех коней">
-			</div>
-			<div class="start__content">
-				<div class="start__content__title">
-					<h1 class="start__content__title__row start__content__title__row_first">Превратите уездный город</h1>
-					<h1 class="start__content__title__row start__content__title__row_second">в столицу</h1>
-					<h1 class="start__content__title__row start__content__title__row_third">земного шара</h1>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="logo">
+					<img class="no-touch" src="./img/logo.svg" alt="Клуб четырёх коней">
 				</div>
-				<div class="start__content__description">
-					<span>Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</span>
-				</div>
-				<div class="start__content__buttons">
-					<button class="start__content__button start__content__button_support"><span class="start__content__button__text">Поддержать шахматную мысль</span></button>
-					<button class="start__content__button start__content__button_details"><span class="start__content__button__text">Подробнее о турнире</span></button>
-				</div>
-			</div>
-		</div>
-		<div class="start__background">
-			<figure class="start__background__item start__background__item_layer-7">
-				<img class="no-touch start__background__item__img" src="./img/img-c636c3.svg" alt="Солнце">
-			</figure>
-			<figure class="start__background__item start__background__item_layer-6">
-				<img class="no-touch start__background__item__img" src="./img/img-ea9eb1.png" alt="Королева">
-			</figure>
-			<figure class="start__background__item start__background__item_layer-5">
-				<img class="no-touch start__background__item__img" src="./img/img-deaafc.png" alt="Король">
-			</figure>
-			<figure class="start__background__item start__background__item_layer-4">
-				<img class="no-touch start__background__item__img" src="./img/img-dbb4dc.png" alt="Город">
-			</figure>
-			<figure class="start__background__item start__background__item_layer-3">
-				<img class="no-touch start__background__item__img" src="./img/img-4606c6.png" alt="Фильтр">
-			</figure>
-			<figure class="start__background__item start__background__item_layer-2">
-				<img class="no-touch start__background__item__img" src="./img/img-8c5a6b.png" alt="Пешка">
-			</figure>
-			<figure class="start__background__item start__background__item_layer-1">
-				<img class="no-touch start__background__item__img" src="./img/img-012af1.png" alt="Конь">
-			</figure>
-		</div>
-	</section>
-	<section class="ticker">
-		<div class="ticker_viewport">
-		</div>
-	</section>
-	<section class="support">
-		<div class="container">
-			<div class="support_content">
-				<div class="support__item support__item-lectionary">
-					<div class="support__item-lectionary__item support__item-lectionary__item-title">
-						<h2 class="support__title">Чтобы поддержать Международный васюкинский турнир</h2>
-						<h2 class="support__title">посетите лекцию на тему: <strong class="t--c-three">«Плодотворная дебютная идея»</strong></h2>
+				<div class="header__content">
+					<div class="header__title">
+						<h1 class="h h-1 header__title_row header__title_row_first">Превратите уездный город</h1>
+						<h1 class="h h-1 header__title_row header__title_row_second">в столицу</h1>
+						<h1 class="h h-1 header__title_row header__title_row_third">земного шара</h1>
 					</div>
-					<figure class="support__item-lectionary__item support__item-lectionary__item-figure">
-						<img class="no-touch support__item_lectionary__item-figure__img" src="./img/img-53dd0d.png" alt="«Плодотворная дебютная идея»">
-					</figure>
+					<div class="header__description">
+						<span class="t">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</span>
+					</div>
+					<div class="header__buttons">
+						<a href="#support" class="link button button_large button_large--b-y no-touch"><span class="t">Поддержать шахматную мысль</span></a>
+						<a href="#details" class="link button button_large button_large--t-b no-touch"><span class="t">Подробнее о турнире</span></a>
+					</div>
 				</div>
-				<div class="support__item support__item-session">
-					<figure class="support__item-session__item support__item-session__item-figure">
-						<img class="no-touch support__item-session__item-figure__img support__item-session__item-figure__img-1" src="./img/img-d79e97.png" alt="Фильтр">
-						<img class="no-touch support__item-session__item-figure__img support__item-session__item-figure__img-2" src="./img/img-70176c.png" alt="Сеанс одновременной игры в шахматы на 160 досках гроссмейстера О. Бендера">
-						<img class="no-touch support__item-session__item-figure__img support__item-session__item-figure__img-3" src="./img/img-042758.png" alt="Фильтр">
-					</figure>
-					<div class="support__item-session__item support__item-session__item-content__items">
-						<div class="support__item-session__item-content__item support__item-session__item-content__item-title">
-							<h2 class="support__title">и Сеанс <strong class="t--c-three">одновременной игры в шахматы на 160 досках</strong> гроссмейстера О. Бендера</h2>
+			</div>
+			<div class="header__background">
+				<figure class="background__figure background__figure_layer-7">
+					<img class="background__figure-img no-touch" src="./img/img-header-c636c3.svg" alt="Солнце">
+				</figure>
+				<figure class="background__figure background__figure_layer-6">
+					<img class="background__figure-img no-touch" src="./img/img-header-ea9eb1.png" alt="Королева">
+				</figure>
+				<figure class="background__figure background__figure_layer-5">
+					<img class="background__figure-img no-touch" src="./img/img-header-deaafc.png" alt="Король">
+				</figure>
+				<figure class="background__figure background__figure_layer-4">
+					<img class="background__figure-img no-touch" src="./img/img-header-dbb4dc.png" alt="Город">
+				</figure>
+				<figure class="background__figure background__figure_layer-3">
+					<img class="background__figure-img no-touch" src="./img/filter.png" alt="Фильтр">
+				</figure>
+				<figure class="background__figure background__figure_layer-2">
+					<img class="background__figure-img no-touch" src="./img/img-header-8c5a6b.png" alt="Пешка">
+				</figure>
+				<figure class="background__figure background__figure_layer-1">
+					<img class="background__figure-img no-touch" src="./img/img-header-012af1.png" alt="Конь">
+				</figure>
+			</div>
+		</header>
+		<main class="page">
+			<section class="ticker">
+				<!-- Бегущая строка вставляется сюда из ticker.js -->
+			</section>
+			<section class="support" id="support">
+				<div class="container">
+					<div class="support_content">
+						<div class="support__item support__item-lectionary">
+							<div class="lectionary__title">
+								<h3 class="h h-3 inline">Чтобы поддержать Международный васюкинский турнир</h3>
+								<h3 class="h h-3 inline">посетите лекцию на тему: <span class="t-weight_bold t--c-three">«Плодотворная дебютная идея»</strong></h3>
+							</div>
+							<figure class="lectionary__figure">
+								<img class="lectionary__figure-img no-touch" src="./img/img-support-53dd0d.png" alt="«Плодотворная дебютная идея»">
+							</figure>
 						</div>
-						<table class="support__table">
-							<tr class="support__table__row support__table__row-1">
-								<th class="support__table__cell support__table__col support__table__col-1">Место проведения:</th>
-								<th class="support__table__cell support__table__col support__table__col-2">Клуб «Картонажник»</th>
-							</tr>
-							<tr class="support__table__row support__table__row-2">
-								<th class="support__table__cell support__table__col support__table__col-1">Дата и время мероприятия:</th>
-								<th class="support__table__cell support__table__col support__table__col-2">22 июня 1927 г. в 18:00</th>
-							</tr>
-							<tr class="support__table__row support__table__row-3">
-								<th class="support__table__cell support__table__col support__table__col-1">Стоимость входных билетов:</th>
-								<th class="support__table__cell support__table__col support__table__col-2">20 коп.</th>
-							</tr>
-							<tr class="support__table__row support__table__row-4">
-								<th class="support__table__cell support__table__col support__table__col-1">Плата за игру:</th>
-								<th class="support__table__cell support__table__col support__table__col-2">50 коп.</th>
-							</tr>
-							<tr class="support__table__row support__table__row-5">
-								<th class="support__table__cell support__table__col support__table__col-1">Взнос на телеграммы:</th>
-								<th class="support__table__cell support__table__col support__table__col-2"><span class="no-touch text-decorated_strikethrough--c-three">100 руб.</span><span class="no-touch"> </span>21 руб. 16 коп.</th>
-							</tr>
-						</table>
-						<div class="support__item-session__item-content__item support__item-session__item-content__item-note">
-							<p class="t--c-four">По всем вопросам обращаться в администрацию к К. Михельсону</p>
+						<div class="support__item support__item-session">
+							<figure class="session__figure">
+								<img class="session__figure-img session__figure-img_layer-1 no-touch" src="./img/img-support-70176c.png" alt="Сеанс одновременной игры в шахматы на 160 досках гроссмейстера О. Бендера">
+								<img class="session__figure-img session__figure-img_layer-2 no-touch" src="./img/filter_short.png" alt="Фильтр">
+							</figure>
+							<div class="session__content">
+								<div class="session__title">
+									<h3 class="h h-3">и Сеанс <span class="t-weight_bold t--c-three">одновременной игры в шахматы на 160 досках</span> гроссмейстера О. Бендера</h3>
+								</div>
+								<table class="table">
+									<tr class="table__row table__row-1 table__row_first">
+										<th class="table__cell table__col table__col_first"><span class="t t-opacity_seventy">Место проведения:</span></th>
+										<th class="table__cell table__col table__col_last"><span class="t t-weight_semibold">Клуб «Картонажник»</span></th>
+									</tr>
+									<tr class="table__row table__row-2">
+										<th class="table__cell table__col table__col_first"><span class="t t-opacity_seventy">Дата и время мероприятия:</span></th>
+										<th class="table__cell table__col table__col_last"><span class="t t-weight_semibold">22 июня 1927 г. в 18:00</span></th>
+									</tr>
+									<tr class="table__row table__row-3">
+										<th class="table__cell table__col table__col_first"><span class="t t-opacity_seventy">Стоимость входных билетов:</span></th>
+										<th class="table__cell table__col table__col_last"><span class="t t-weight_semibold">20 коп.</span></th>
+									</tr>
+									<tr class="table__row table__row-4">
+										<th class="table__cell table__col table__col_first"><span class="t t-opacity_seventy">Плата за игру:</span></th>
+										<th class="table__cell table__col table__col_last"><span class="t t-weight_semibold">50 коп.</span></th>
+									</tr>
+									<tr class="table__row table__row-5 table__row_last">
+										<th class="table__cell table__col table__col_first"><span class="t t-opacity_seventy">Взнос на телеграммы:</span></th>
+										<th class="table__cell table__col table__col_last"><span class="t t-weight_semibold"><span class="t-decorated_s t-decorated_s--c-three no-touch">100 руб.</span><span class="t no-touch"> </span>21 руб. 16 коп.</span></th>
+									</tr>
+								</table>
+								<div class="session__note">
+									<p class="t--c-four">По всем вопросам обращаться в администрацию к К. Михельсону</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<section class="details">
-		<div class="container">
-			<div class="details__content">
-				<div class="details__title">
-					<div class="details__title--line-2">
-						<h2 class="h h-2">Этапы преображения</h2>
-					</div>
-					<div class="details__title--line-2">
-						<h2 class="h h-2">Васюков</h2>
-						<span class="t t--c-four details__title__subline">Будущие источники обогащения васюкинцев</span>
+			</section>
+			<section class="details" id="details">
+				<div class="container">
+					<div class="details__content">
+						<div class="details__title">
+							<div class="details__title_row-1">
+								<h2 class="h h-2">Этапы преображения</h2>
+							</div>
+							<div class="details__title_row-2">
+								<h2 class="h h-2">Васюков</h2>
+								<span class="t t--c-four details__title_sub">Будущие источники обогащения васюкинцев</span>
+							</div>
+						</div>
+						<ol class="details__items list">
+							<div class="details__grid-cell--1-2">
+								<div class="details__item">
+									<li class="item_content">
+										<span class="t t-weight_medium">Строительство железнодорожной магистрали Москва-Васюки</span>
+									</li>
+								</div>
+								<div class="details__item">
+									<li class="item_content">
+										<span class="t t-weight_medium">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</span>
+									</li>
+								</div>
+							</div>
+							<div class="details__grid-cell--3 details__item">
+								<li class="item_content">
+									<span class="t t-weight_medium">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</span>
+								</li>
+							</div>
+							<div class="details__grid-cell--4-5">
+								<div class="details__item">
+									<li class="item_content">
+										<span class="t t-weight_medium">Строительство дворца<br>для турнира</span>
+									</li>
+								</div>
+								<div class="details__item">
+									<li class="item_content">
+										<span class="t t-weight_medium">Размещение гаражей<br>для гостевого<br>автотранспорта</span>
+									</li>
+								</div>
+							</div>
+							<div class="details__grid-cell--6 details__item">
+								<li class="item_content">
+									<span class="t t-weight_medium">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</span>
+								</li>
+							</div>
+							<div class="details__grid-cell--7 details__item">
+								<li class="item_content">
+									<span class="t t-weight_medium">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</span>
+								</li>
+							</div>
+							<figure class="details__figure">
+								<img class="no-touch details__figure__img" src="./img/img-details-15a01e.png" alt="Самолёт">
+							</figure>
+						</ol>
 					</div>
 				</div>
-				<ol class="details__items">
-					<div class="details__grid-cell--1-2">
-						<div class="details__item">
-							<li class="details__item__text">
-								<span class="t t-medium">Строительство железнодорожной магистрали Москва-Васюки</span>
+			</section>
+			<section class="participants">
+				<div class="container">
+					<div class="participants__content carousel">
+						<div class="participants__title">
+							<h2 class="h h-2">Участники турнира</h2>
+						</div>
+						<div class="participants__navigation navigation">
+							<button id="left" class="button button_circle button_circle_back"></button>
+							<div class="navigation__counts no-touch">
+								<span class="t t-size_s navigation__count navigation__count--current"><!-- Текущий слайд вставляется сюда из carousel.js.itemCurrent --></span>
+								<span class="t t-size_s t-opacity_sixty">/</span>
+								<span class="t t-size_s navigation__count navigation__count--total"><!-- Общее количество слайдов вставляется сюда из carousel.js.itemTotal --></span>
+							</div>
+							<button id="right" class="button button_circle button_circle_next"></button>
+						</div>
+						<ul class="participants__items carousel__items list">
+							<li class="participants__item carousel__item">
+								<figure class="item__figure">
+									<img class="no-touch item__figure-img" src="./img/img-participants-4f82b1.png" alt="Хозе-Рауль Капабланка">
+								</figure>
+								<div class="item__title">
+									<span class="t t-size_l t-weight_semibold">Хозе-Рауль Капабланка</span>
+									<p class="t t-opacity_sixty">Чемпион мира по шахматам</p>
+								</div>
+								<a type="button" onclick="console.log('href не задан');" class="button button_small no-touch"><span class="t t-size_s t-weight_medium">Подробнее</span></a>
 							</li>
-						</div>
-						<div class="details__item">
-							<li class="details__item__text">
-								<span class="t t-medium">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</span>
+							<li class="participants__item carousel__item">
+								<figure class="item__figure">
+									<img class="no-touch item__figure-img" src="./img/img-participants-4f82b1.png" alt="Эммануил Ласкер">
+								</figure>
+								<div class="item__title">
+									<span class="t t-size_l t-weight_semibold">Эммануил Ласкер</span>
+									<p class="t t-opacity_sixty">Чемпион мира по шахматам</p>
+								</div>
+								<a type="button" onclick="console.log('href не задан');" class="button button_small no-touch"><span class="t t-size_s t-weight_medium">Подробнее</span></a>
 							</li>
-						</div>
-					</div>
-					<div class="details__grid-cell--3 details__item">
-						<li class="details__item__text">
-							<span class="t t-medium">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</span>
-						</li>
-					</div>
-					<div class="details__grid-cell--4-5">
-						<div class="details__item">
-							<li class="details__item__text">
-								<span class="t t-medium">Строительство дворца<br>для турнира</span>
+							<li class="participants__item carousel__item">
+								<figure class="item__figure">
+									<img class="no-touch item__figure-img" src="./img/img-participants-4f82b1.png" alt="Александр Алехин">
+								</figure>
+								<div class="item__title">
+									<span class="t t-size_l t-weight_semibold">Александр Алехин</span>
+									<p class="t t-opacity_sixty">Чемпион мира по шахматам</p>
+								</div>
+								<a type="button" onclick="console.log('href не задан');" class="button button_small no-touch"><span class="t t-size_s t-weight_medium">Подробнее</span></a>
 							</li>
-						</div>
-						<div class="details__item">
-							<li class="details__item__text">
-								<span class="t t-medium">Размещение гаражей<br>для гостевого<br>автотранспорта</span>
+							<li class="participants__item carousel__item">
+								<figure class="item__figure">
+									<img class="no-touch item__figure-img" src="./img/img-participants-4f82b1.png" alt="Арон Нимцович">
+								</figure>
+								<div class="item__title">
+									<span class="t t-size_l t-weight_semibold">Арон Нимцович</span>
+									<p class="t t-opacity_sixty">Чемпион мира по шахматам</p>
+								</div>
+								<a type="button" onclick="console.log('href не задан');" class="button button_small no-touch"><span class="t t-size_s t-weight_medium">Подробнее</span></a>
 							</li>
-						</div>
+							<li class="participants__item carousel__item">
+								<figure class="item__figure">
+									<img class="no-touch item__figure-img" src="./img/img-participants-4f82b1.png" alt="Рихард Рети">
+								</figure>
+								<div class="item__title">
+									<span class="t t-size_l t-weight_semibold">Рихард Рети</span>
+									<p class="t t-opacity_sixty">Чемпион мира по шахматам</p>
+								</div>
+								<a type="button" onclick="console.log('href не задан');" class="button button_small no-touch"><span class="t t-size_s t-weight_medium">Подробнее</span></a>
+							</li>
+							<li class="participants__item carousel__item">
+								<figure class="item__figure">
+									<img class="no-touch item__figure-img" src="./img/img-participants-4f82b1.png" alt="Остап Бендер">
+								</figure>
+								<div class="item__title">
+									<span class="t t-size_l t-weight_semibold">Остап Бендер</span>
+									<p class="t t-opacity_sixty">Гроссмейстер</p>
+								</div>
+								<a type="button" onclick="console.log('href не задан');" class="button button_small no-touch"><span class="t t-size_s t-weight_medium">Подробнее</span></a>
+							</li>
+						</ul>
 					</div>
-					<div class="details__grid-cell--6 details__item">
-						<li class="details__item__text">
-							<span class="t t-medium">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</span>
-						</li>
-					</div>
-					<div class="details__grid-cell--7 details__item">
-						<li class="details__item__text">
-							<span class="t t-medium">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</span>
-						</li>
-					</div>
-					<figure class="details__figure">
-						<img class="no-touch details__figure__img" src="./img/img-15a01e.png" alt="Самолёт">
-					</figure>
-				</ol>
-			</div>
-		</div>
-	</section>
-	<section class="participants">
-		<div class="container">
-			<div class="participants__content carousel">
-				<div class="participants__title">
-					<h2 class="h h-2">Участники турнира</h2>
 				</div>
-				<div class="navigation">
-					<button id="left" class="navigation__button navigation__button--back"></button>
-					<div class="navigation__counts no-touch">
-						<span class="t t-s navigation__count navigation__count--current"><!-- carousel.itemCurrent --></span>
-						<span class="t t-s t-opacity">/</span>
-						<span class="t t-s navigation__count navigation__count--total"><!-- carousel.itemTotal --></span>
-					</div>
-					<button id="right" class="navigation__button navigation__button--next"></button>
-				</div>
-				<ul class="participants__items carousel__items">
-					<li class="participants__item carousel__item">
-						<figure class="participants__item__figure">
-							<img class="no-touch participants__item__figure__img" src="./img/img-4f82b1.png" alt="Хозе-Рауль Капабланка">
-						</figure>
-						<div class="participants__item_title">
-							<span class="t t-l t-semibold">Хозе-Рауль Капабланка</span>
-							<p class="t t-opacity">Чемпион мира по шахматам</p>
-						</div>
-						<a href="#" class="participants__item__button no-touch"><span class="t t-s t-medium participants__item__button__text">Подробнее</span></a>
-					</li>
-					<li class="participants__item carousel__item">
-						<figure class="participants__item__figure">
-							<img class="no-touch participants__item__figure__img" src="./img/img-4f82b1.png" alt="Эммануил Ласкер">
-						</figure>
-						<div class="participants__item_title">
-							<span class="t t-l t-semibold">Эммануил Ласкер</span>
-							<p class="t t-opacity">Чемпион мира по шахматам</p>
-						</div>
-						<a href="#" class="participants__item__button no-touch"><span class="t t-s t-medium participants__item__button__text">Подробнее</span></a>
-					</li>
-					<li class="participants__item carousel__item">
-						<figure class="participants__item__figure">
-							<img class="no-touch participants__item__figure__img" src="./img/img-4f82b1.png" alt="Александр Алехин">
-						</figure>
-						<div class="participants__item_title">
-							<span class="t t-l t-semibold">Александр Алехин</span>
-							<p class="t t-opacity">Чемпион мира по шахматам</p>
-						</div>
-						<a href="#" class="participants__item__button no-touch"><span class="t t-s t-medium participants__item__button__text">Подробнее</span></a>
-					</li>
-					<li class="participants__item carousel__item">
-						<figure class="participants__item__figure">
-							<img class="no-touch participants__item__figure__img" src="./img/img-4f82b1.png" alt="Арон Нимцович">
-						</figure>
-						<div class="participants__item_title">
-							<span class="t t-l t-semibold">Арон Нимцович</span>
-							<p class="t t-opacity">Чемпион мира по шахматам</p>
-						</div>
-						<a href="#" class="participants__item__button no-touch"><span class="t t-s t-medium participants__item__button__text">Подробнее</span></a>
-					</li>
-					<li class="participants__item carousel__item">
-						<figure class="participants__item__figure">
-							<img class="no-touch participants__item__figure__img" src="./img/img-4f82b1.png" alt="Рихард Рети">
-						</figure>
-						<div class="participants__item_title">
-							<span class="t t-l t-semibold">Рихард Рети</span>
-							<p class="t t-opacity">Чемпион мира по шахматам</p>
-						</div>
-						<a href="#" class="participants__item__button no-touch"><span class="t t-s t-medium participants__item__button__text">Подробнее</span></a>
-					</li>
-					<li class="participants__item carousel__item">
-						<figure class="participants__item__figure">
-							<img class="no-touch participants__item__figure__img" src="./img/img-4f82b1.png" alt="Остап Бендер">
-						</figure>
-						<div class="participants__item_title">
-							<span class="t t-l t-semibold">Остап Бендер</span>
-							<p class="t t-opacity">Гроссмейстер</p>
-						</div>
-						<a href="#" class="participants__item__button no-touch"><span class="t t-s t-medium participants__item__button__text">Подробнее</span></a>
-					</li>
-				</ul>
+			</section>
+			<section class="ticker">
+				<!-- Бегущая строка вставляется сюда из ticker.js -->
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<p class="t t-size_s t-opacity_sixty">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
 			</div>
-		</div>
-	</section>
-	<section class="ticker">
-		<div class="ticker_viewport">
-		</div>
-	</section>
-	<footer class="footer">
-		<div class="container">
-			<p class="t t-s footer__text">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
-		</div>
-	</footer>
-	<script src="./js/ticker.js"></script>
-	<script src="./js/carousel.js"></script>
+		</footer>
+	</div>
 </body>
 </html>

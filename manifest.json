@@ -1,0 +1,21 @@
+{
+	"short_name": "four-horse-club",
+	"name": "«Клуб четырёх коней»",
+	"icons": [
+	  {
+		"src": "favicon.ico",
+		"sizes": "64x64 32x32 24x24 16x16",
+		"type": "image/x-icon"
+	  },
+	  {
+		"src": "favicon.png",
+		"type": "image/png",
+		"sizes": "256x256"
+	  }
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#313131",
+	"background_color": "#E7DBD0"
+  }
+  
