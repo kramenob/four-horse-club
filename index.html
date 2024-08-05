@@ -35,6 +35,8 @@
 
 	<script src="./js/ticker.js" defer></script>
 	<script src="./js/carousel.js" defer></script>
+	<script src="./js/support/reorder.js" defer></script>
+	<script src="./js/adaptiveHandler.js" defer></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -45,9 +47,9 @@
 				</div>
 				<div class="header__content">
 					<div class="header__title">
-						<h1 class="h h-1 header__title_row header__title_row_first">Превратите уездный город</h1>
-						<h1 class="h h-1 header__title_row header__title_row_second">в столицу</h1>
-						<h1 class="h h-1 header__title_row header__title_row_third">земного шара</h1>
+						<h1 class="h h-1 header__title_row header__title_row_first">Превратите уездный город</h1>
+						<h1 class="h h-1 header__title_row header__title_row_second">в столицу</h1>
+						<h1 class="h h-1 header__title_row header__title_row_third">земного шара</h1>
 					</div>
 					<div class="header__description">
 						<span class="t">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</span>
@@ -89,7 +91,7 @@
 			<section class="support" id="support">
 				<div class="container">
 					<div class="support_content">
-						<div class="support__item support__item-lectionary">
+						<div class="support__item support__item-lectionary desk">
 							<div class="lectionary__title">
 								<h3 class="h h-3 inline">Чтобы поддержать Международный васюкинский турнир</h3>
 								<h3 class="h h-3 inline">посетите лекцию на тему: <span class="t-weight_bold t--c-three">«Плодотворная дебютная идея»</strong></h3>
@@ -107,7 +109,7 @@
 								<div class="session__title">
 									<h3 class="h h-3">и Сеанс <span class="t-weight_bold t--c-three">одновременной игры в шахматы на 160 досках</span> гроссмейстера О. Бендера</h3>
 								</div>
-								<table class="table">
+								<table class="session__table table">
 									<tr class="table__row table__row-1 table__row_first">
 										<th class="table__cell table__col table__col_first"><span class="t t-opacity_seventy">Место проведения:</span></th>
 										<th class="table__cell table__col table__col_last"><span class="t t-weight_semibold">Клуб «Картонажник»</span></th>
@@ -120,7 +122,7 @@
 										<th class="table__cell table__col table__col_first"><span class="t t-opacity_seventy">Стоимость входных билетов:</span></th>
 										<th class="table__cell table__col table__col_last"><span class="t t-weight_semibold">20 коп.</span></th>
 									</tr>
-									<tr class="table__row table__row-4">
+									<tr class="table__row table__row-4 table__row_anyway">
 										<th class="table__cell table__col table__col_first"><span class="t t-opacity_seventy">Плата за игру:</span></th>
 										<th class="table__cell table__col table__col_last"><span class="t t-weight_semibold">50 коп.</span></th>
 									</tr>
@@ -139,7 +141,7 @@
 			</section>
 			<section class="details" id="details">
 				<div class="container">
-					<div class="details__content">
+					<div class="details__content carousel carousel_view-single carousel_navigation-dots">
 						<div class="details__title">
 							<div class="details__title_row-1">
 								<h2 class="h h-2">Этапы преображения</h2>
@@ -149,67 +151,62 @@
 								<span class="t t--c-four details__title_sub">Будущие источники обогащения васюкинцев</span>
 							</div>
 						</div>
-						<ol class="details__items list">
-							<div class="details__grid-cell--1-2">
-								<div class="details__item">
+						<ol class="details__items carousel__items list">
+							<div class="details__grid-cell--1-2 details__item_twice carousel__item">
+								<div class="details__item_once">
 									<li class="item_content">
 										<span class="t t-weight_medium">Строительство железнодорожной магистрали Москва-Васюки</span>
 									</li>
 								</div>
-								<div class="details__item">
+								<div class="details__item_once">
 									<li class="item_content">
-										<span class="t t-weight_medium">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</span>
+										<span class="t t-weight_medium">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</span>
 									</li>
 								</div>
 							</div>
-							<div class="details__grid-cell--3 details__item">
+							<div class="details__grid-cell--3 details__item_once carousel__item">
 								<li class="item_content">
 									<span class="t t-weight_medium">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</span>
 								</li>
 							</div>
-							<div class="details__grid-cell--4-5">
-								<div class="details__item">
+							<div class="details__grid-cell--4-5 carousel__item">
+								<div class="details__item_once">
 									<li class="item_content">
 										<span class="t t-weight_medium">Строительство дворца<br>для турнира</span>
 									</li>
 								</div>
-								<div class="details__item">
+								<div class="details__item_once">
 									<li class="item_content">
 										<span class="t t-weight_medium">Размещение гаражей<br>для гостевого<br>автотранспорта</span>
 									</li>
 								</div>
 							</div>
-							<div class="details__grid-cell--6 details__item">
+							<div class="details__grid-cell--6 details__item_once carousel__item">
 								<li class="item_content">
 									<span class="t t-weight_medium">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</span>
 								</li>
 							</div>
-							<div class="details__grid-cell--7 details__item">
+							<div class="details__grid-cell--7 details__item_twice details__item_once carousel__item">
 								<li class="item_content">
-									<span class="t t-weight_medium">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</span>
+									<span class="t t-weight_medium">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</span>
 								</li>
 							</div>
-							<figure class="details__figure">
-								<img class="no-touch details__figure__img" src="./img/img-details-15a01e.png" alt="Самолёт">
-							</figure>
 						</ol>
+						<figure class="details__figure">
+							<img class="no-touch details__figure__img" src="./img/img-details-15a01e.png" alt="Самолёт">
+						</figure>
+						<div class="participants__navigation navigation mob">
+						</div>
 					</div>
 				</div>
 			</section>
 			<section class="participants">
 				<div class="container">
-					<div class="participants__content carousel">
+					<div class="participants__content carousel carousel_navigation-digitals carousel_autoscroll-true">
 						<div class="participants__title">
 							<h2 class="h h-2">Участники турнира</h2>
 						</div>
 						<div class="participants__navigation navigation">
-							<button id="left" class="button button_circle button_circle_back"></button>
-							<div class="navigation__counts no-touch">
-								<span class="t t-size_s navigation__count navigation__count--current"><!-- Текущий слайд вставляется сюда из carousel.js.itemCurrent --></span>
-								<span class="t t-size_s t-opacity_sixty">/</span>
-								<span class="t t-size_s navigation__count navigation__count--total"><!-- Общее количество слайдов вставляется сюда из carousel.js.itemTotal --></span>
-							</div>
-							<button id="right" class="button button_circle button_circle_next"></button>
 						</div>
 						<ul class="participants__items carousel__items list">
 							<li class="participants__item carousel__item">
