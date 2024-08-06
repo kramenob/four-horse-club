@@ -16,7 +16,7 @@ const switchDeskMob = (event) => {
 	}
 }
 
-const detailsItemsCarousel = (event) => {
+const detailsItems = (event) => {
 	if (event.matches) {
 		details.classList.add("carousel__items")
 	} else {
@@ -25,4 +25,4 @@ const detailsItemsCarousel = (event) => {
 }
 
 mw_1222.addEventListener('change', switchDeskMob); switchDeskMob(mw_1222)
-mw_1222.addEventListener('change', detailsItemsCarousel); detailsItemsCarousel(mw_1222)
+mw_1222.addEventListener('change', detailsItems); detailsItems(mw_1222)
