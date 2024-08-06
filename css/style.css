@@ -1036,6 +1036,17 @@
 	.table__col_first { /* первый столбец */
 		width: 100%;
 	}
+	/* ПОДДЕРЖАТЬ ВАСЮКИНСКИЙ ТУРНИР :: section support */
+	.lectionary__title { /* заголовок лекции */
+		max-width: 800px;
+	}
+	.lectionary__title_line-1 { /* первая строка */
+		justify-self: start;
+	}
+	.lectionary__title_line-2 { /* вторая строка */
+		justify-self: end;
+		text-align: end;
+	}
 	/* ЭТАПЫ ПРЕОБРАЖЕНИЯ ВАСЮКОВ :: section details */
 	.details { /* отступы */
 		padding: 60px 0;
@@ -1242,5 +1253,13 @@
 		border: unset;
 
 		display: block;
+	}
+	/* ПОДДЕРЖАТЬ ВАСЮКИНСКИЙ ТУРНИР :: section support */
+	.lectionary__title_line-1 { /* первая строка */
+		justify-self: start;
+	}
+	.lectionary__title_line-2 { /* вторая строка */
+		justify-self: start;
+		text-align: left;
 	}
 }
