@@ -1,6 +1,7 @@
 
+// ticker/ticker.js
 // БЕГУЩАЯ СТРОКА :: section ticker
-// ticker.js
+// Из перечня фраз делает блок бегущей строки. Доступно переиспользование.
 
 // перечень фраз бегущей строки
 let ticker_items = [
@@ -9,12 +10,8 @@ let ticker_items = [
 	"Лед тронулся, господа присяжные заседатели!"
 ]
 
-// определяем все контейнеры с бегущей строкой на странице
-// let tickers = document.querySelectorAll(".ticker .ticker_viewport")
-let tickers = document.querySelectorAll(".ticker")
-
 // создаём и вставляем контент бегущей строки
-tickers.forEach(ticker => {
+document.querySelectorAll(".ticker").forEach(ticker => { // определяем все контейнеры с бегущей строкой на странице
 
 	// создаём контейнер для вьюпорта
 	let ticker_viewport = document.createElement("div")
